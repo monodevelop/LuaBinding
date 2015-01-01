@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Template Language="Lua" originator = "Matthias Mailänder">
+	
+	<TemplateConfiguration>
+		<_Name>OpenRA mission</_Name>
+		<Icon>md-text-file-icon</Icon>
+		<_Category>General</_Category>
+		<LanguageName>Lua</LanguageName>
+		<_Description>OpenRA mission scripted using the Lua API.</_Description>
+	</TemplateConfiguration>
+	
+	<TemplateFiles>
+		<File DefaultExtension=".lua" DefaultName="map">
+<![CDATA[
+WorldLoaded = function()
+	player = Player.GetPlayer("GoodGuy")
+	enemy = Player.GetPlayer("BadGuy")
+
+	Trigger.OnObjectiveAdded(player, function(p, id)
+		Media.DisplayMessage(p.GetObjectiveDescription(id), "New " .. string.lower(p.GetObjectiveType(id)) .. " objective")
+	end)
+	Trigger.OnObjectiveCompleted(player, function(p, id)
+		Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective completed")
+	end)
+	Trigger.OnObjectiveFailed(player, function(p, id)
+		Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective failed")
+	end)
+
+	Trigger.OnPlayerWon(player, function()
+		Media.PlaySpeechNotification(player, "Win")
+	end)
+	Trigger.OnPlayerLost(player, function()
+		Media.PlaySpeechNotification(player, "Lose")
+	end)
+end
+
+Tick = function()
+end
+]]>
+		</File>
+	</TemplateFiles>
+	
+	<FileOptions/>
+	
+</Template>

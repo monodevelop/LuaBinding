@@ -26,10 +26,14 @@
 
 	<Extension path = "/MonoDevelop/Ide/FileTemplates">
 		<FileTemplate id = "EmptyLuaFile" resource = "EmptyLuaFile.xft.xml"/>
+		<FileTemplate id = "EmptyLuaModule" resource = "EmptyLuaModule.xft.xml" />
+		<FileTemplate id = "LuaMissionOpenRA" resource = "LuaMissionOpenRA.xft.xml" />
 	</Extension>
 
 	<Extension path = "/MonoDevelop/Ide/ProjectTemplates">
 		<ProjectTemplate id = "WowAddin" resource = "WowAddinProject.xpt.xml"/>
+		<ProjectTemplate id = "LuaGmodAddon" resource = "LuaGmodAddon.xpt.xml"/>
+		<ProjectTemplate id = "LuaConsoleProject" resource = "LuaConsoleProject.xpt.xml"/>
 	</Extension>
 
 
