@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="LuaLanguageBinding.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Project\LuaCompilerParameters.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -54,6 +53,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="templates\WowAddinProject.xpt.xml">
       <LogicalName>WowAddinProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="templates\EmptyLuaModule.xft.xml">
+      <LogicalName>EmptyLuaModule.xft.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="templates\LuaConsoleProject.xpt.xml">
+      <LogicalName>LuaConsoleProject.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="templates\LuaGmodAddon.xpt.xml">
+      <LogicalName>LuaGmodAddon.xpt.xml</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="templates\LuaMissionOpenRA.xft.xml">
+      <LogicalName>LuaMissionOpenRA.xft.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
