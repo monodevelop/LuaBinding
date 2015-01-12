@@ -1,0 +1,7 @@
+<AddinProject appVersion="5.0">
+	<Project platforms="Mac Linux Win32">
+		<AddinFile>obj/Debug/LuaBinding.dll</AddinFile>
+		<BuildFile>LuaBinding.sln</BuildFile>
+		<BuildConfiguration>Debug</BuildConfiguration>
+	</Project>
+</AddinProject>

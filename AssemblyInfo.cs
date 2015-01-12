@@ -5,5 +5,5 @@ using System.Reflection;
 [assembly: AssemblyProduct ("MonoDevelop")]
 [assembly: AssemblyTitle ("Lua Language Binding")]
 [assembly: AssemblyDescription ("Lua Language Binding")]
-[assembly: AssemblyVersion ("2.6")]
+[assembly: AssemblyVersion ("5.5")]
 [assembly: AssemblyCopyright ("MIT X11")]

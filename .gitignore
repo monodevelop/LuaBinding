@@ -1,0 +1,6 @@
+# binaries
+obj/
+bin/
+
+# IDE
+*.userprefs

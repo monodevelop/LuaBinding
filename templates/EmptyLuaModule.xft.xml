@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Template originator = "Kate Adams" Language = "Lua">
+	<TemplateConfiguration>
+		<_Name>Empty Lua module</_Name>
+		<Icon>md-text-file-icon</Icon>
+		<_Category>General</_Category>
+		<LanguageName>Lua</LanguageName>
+		<_Description>Creates an empty Lua module.</_Description>
+	</TemplateConfiguration>
+
+	<TemplateFiles>
+		<File DefaultExtension = ".lua" DefaultName = "EmptyLuaModule" AddStandardHeader = "True">
+<![CDATA[
+local module = {}
+module._VERSION = "empty-module 0.1"
+
+return module
+]]>
+		</File>
+	</TemplateFiles>
+</Template>
